@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="320.0" stylesheets="@weather_css.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoadingScreenController">
+   <center>
+      <ImageView fx:id="logoImage" fitHeight="118.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/footballLogo.png" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <VBox prefHeight="70.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="20.0" prefWidth="200.0" />
+            <ProgressBar fx:id="loadProgressBar" prefHeight="20.0" prefWidth="320.0" progress="0.0" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="320.0" stylesheets="@weather_css.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WeekScreenController">
+   <center>
+      <AnchorPane prefHeight="480.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="weekBackgroundImage" fitHeight="480.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/footballPitch.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="287.0" prefHeight="193.0" prefWidth="320.0">
+               <children>
+                  <Region prefHeight="93.0" prefWidth="320.0" />
+                  <Slider fx:id="timeSlider" prefHeight="16.0" prefWidth="179.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="302.0" prefWidth="320.0">
+               <children>
+                  <Slider fx:id="weatherTimeSlider" />
+                  <HBox prefHeight="380.0" prefWidth="320.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="345.0" prefWidth="316.0" spacing="15.0">
+                           <children>
+                              <Region prefHeight="30.0" prefWidth="125.0" />
+                              <Label fx:id="sunLabel" text="Sunday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="monLabel" text="Monday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="tuesLabel" text="Tuesday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="wedLabel" text="Wednesday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="thursLabel" text="Thursday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="friLabel" text="Friday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="satLabel" text="Saturday" textFill="#f9ff00">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="380.0" prefWidth="166.0" spacing="10.0">
+                           <children>
+                              <Region prefHeight="0.0" prefWidth="45.0" />
+                              <ImageView fx:id="sunImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="monImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="tuesImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="wedImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="thursImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
